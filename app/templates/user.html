@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'flash.html' %}
+<div class="well well-large">
+  <div class="pull-right">
+    <img src="{{user.avatar(128)}}" class="img-polaroid">
+  </div>
+  <h1>User: {{user.nickname}}!</h1>
+      {% if user.about_me %}<p>{{user.about_me}}</p>{% endif %}
+      {% if user.last_seen %}<p><em>Last Seen:{{moment(user.last_seen).fromNow()}}</em></p>{% endif %}
+      {% if user.id == g.user.id %}
+        <a href="{{url_for('edit')}}">Edit</a>
+      {%endif%}
+      </p>
+    </div>
+{% endblock %}
