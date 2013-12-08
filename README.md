@@ -16,13 +16,13 @@ This is a skeleton project for Flask with the following features.
     git clone https://github.com/amjith/flask-skel.git project_name
     cd project_name
 
-### Create a new virtualenv (I use virtualenvwrapper(http://virtualenvwrapper.readthedocs.org/en/latest/))
+### Create a new virtualenv (I use [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/))
 
-    mkvirtualenv project_name   # Create a new virtualenv, I use [virtualenvwrapper](http://virtualenvwrapper.readthedocs.org/en/latest/).
+    mkvirtualenv project_name 
 
 ### Install the dependencies.
 
-    pip install -r requirements.txt  # Install the requirements.
+    pip install -r requirements.txt 
 
 ### Setup the database and migrations.
 
