@@ -9,7 +9,7 @@ This is a skeleton project for Flask with the following features.
 * Email support
 * Bootstrap 3 for eye candy
 
-# Getting Started:
+# How to use it:
 
 ### Clone this repo into your desired location. 
 
