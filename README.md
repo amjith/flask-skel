@@ -26,11 +26,13 @@ This is a skeleton project for Flask with the following features.
 
 ### Setup the database and migrations.
 
+    export GMAIL_PASSWD='test'   # This enables sending emails using your gmail account when an error happens.
     PYTHONPATH=. alembic revision --autogenerate -m 'Initial setup.'   # Create an initial migration.
     PYTHONPATH=. alembic upgrade head  # Upgrade the database to the newly created migration.
 
 ### Run the project.
 
+    export GMAIL_PASSWD='test'   # This enables sending emails using your gmail account when an error happens.
     python run.py  # Start the flask dev server that serves on port 5000.
 
 Visit http://localhost:5000 to bask in the glory.
